@@ -15,7 +15,7 @@ main {
 
 .hero-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/hero.jpg");
-    height: 65%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +33,7 @@ main {
 }
 
 .hero-text h1 {
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .hero-text button {
@@ -45,12 +45,146 @@ main {
     font-size: 20px;
 }
 
+.section-offer {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-bottom: 40px;
+    color: #ffff;
+}
+
+.grid-container {
+    padding-left: 10vh;
+    padding-right: 10vh;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "icon1 description1"
+        "icon2 description2"
+        "icon3 description3"; 
+}
+
+
+.icon1 { 
+    grid-area: icon1; 
+    justify-self: end;
+    padding-right: 30px;
+}
+
+.icon2 { 
+    grid-area: icon2; 
+    justify-self: end;
+    padding-right: 30px;
+}
+
+.icon3 { 
+    grid-area: icon3; 
+    justify-self: end;
+    padding-right: 30px;
+}
+
+.icon1 img, .icon2 img, .icon3 img{
+    width: 200px;
+    height: 200px;
+}
+
+.description1 { 
+    grid-area: description1;
+    align-self: center;   
+}
+
+.description2 { 
+    grid-area: description2;
+    align-self: center;   
+}
+
+.description3 { 
+    grid-area: description3;
+    align-self: center;   
+}
+
+.description1 p, .description2 p, .description3 p {
+    width: 400px;
+}
+
+.section-img-1 {
+    background-image: url(img/section-space-2.jpg);
+}
+
+.section-img-2 {
+    background-image: url(img/section-space-1.jpg);
+}
+
+.section-img-1, .section-img-2 {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.section-dates {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-bottom: 40px;
+} 
+
+.section-title {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    padding-top: 30px;
+    color: #ffff;
+}
+
+.dates-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dates-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.03);
+    transition: 0.3s;
+    margin: 2vh;
+    padding-top: 2vh;
+    background-color: rgba(57, 74, 58, 1);
+    background-image: linear-gradient(rgba(57, 74, 58, 1), rgba(255, 255, 255, 0.2));
+    border: solid rgba(60, 74, 58, 1);
+    height: auto;
+  }
+  
+.dates-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.2);
+  }
+  
+.dates-container {
+    padding: 2px 16px;
+    color: #ffff;
+  }
+
+.dates-card h3 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 15px 10px 15px;
+    color: #ffff;
+}
+
+.dates-container li, ul {
+    font-size: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+
 nav {
-    background-color: #48860A;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(img/background.jpg);
+    border-right: solid 2px rgba(0, 0, 0, 0.68);
     color: #ffff;
     padding: 5px;
     height: 100vh;
-    width: 20%;
+    width: auto;
 }
 
 .wrapper {
@@ -61,7 +195,9 @@ nav {
 .wrapper-menu {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     width: 200px;
+    padding-left: 15%;
 }
 
 .menu-logo {
@@ -69,7 +205,15 @@ nav {
     padding-top: 10px;
 }
 
-.menu-button {
+.menu {
+    padding-left: 20%;
+}
+
+.menu-button-top {
+    padding-top: 20px;
+}
+
+.menu-button, .menu-button-top {
     background: none;
     border: none;
     color: #ffff;
