@@ -7,6 +7,7 @@
     <meta charset="UFT-8">
     <meta name="viewport" content="widith=device=widith, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
@@ -14,26 +15,30 @@
 <body>
     <div class="wrapper">
         <main>
-            <div class="hero-img">
+            <div class="hero-img" id="hero-img">
                 <div class="hero-text">
-                  <h1>LOREM IPSUM</h1>
-                  <button>Dowiedz się więcej</button>
+                  <h1>OBOZY I KOLONIE MILITARNE</h1>
+                  <a href="#offer"><button>Dowiedz się więcej</button></a>
                 </div>
             </div>
             <div class="section-offer">
-                <h2 class="section-title">OFERTA</h2>
+                <h2 class="section-title" id="offer">OFERTA</h2>
                 <div class="grid-container">
-                    <div class="icon1"><img src="img/placeholder.png"></div>
-                    <div class="icon2"><img src="img/placeholder.png"></div>
-                    <div class="icon3"><img src="img/placeholder.png"></div>
-                    <div class="description1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
-                    <div class="description2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
-                    <div class="description3"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
+                    <div class="icon1"><img src="img/icon1.png"></div>
+                    <div class="icon2"><img src="img/icon2.png"></div>
+                    <div class="icon3"><img src="img/icon3.png"></div>
+                    <div class="icon4"><img src="img/icon4.png"></div>
+                    <div class="icon5"><img src="img/icon5.png"></div>
+                    <div class="description1"><p>Wykwalifikowana kadra. Zajęcia prowadzone są przez zawodowych żołnierzy Wojska Polskiego znajdujących się w czynnej służbie z wieloletnim doświadczeniem.</p></div>
+                    <div class="description2"><p>Treningi z musztry, działań taktycznych, samoobrony, a także gry wojenne z wykorzystaniem karabinów AirSoft.</p></div>
+                    <div class="description3"><p>Wizyty na wojskowych poligonach, w tym także na symulatorze pola walki ŚNIEŻNIK.</p></div>
+                    <div class="description4"><p>Zajęcia z podtaw survivalu, bushcraftu oraz organizacji obozowania. Dla najwytrwalszych całonocne bytowanie w lesie lub na wyspie.</p></div>
+                    <div class="description5"><p>Oraz wiele innych atrakcji. W tym między innymi wizyty w Międzyrzeckim Rejonie Umocnionym, park linowy, atrakcje wodne oraz wiele innych!</p></div>
                 </div>
             </div>
             <div class="section-img-1"></div>
             <div class="section-dates">
-                <h2 class="section-title">TERMINY</h2>
+                <h2 class="section-title" id="terms">TERMINY</h2>
                 <div class="dates-wrapper">
                     <div class="dates-card">
                         <h3>XX DNI</h3>
@@ -65,20 +70,37 @@
             </div>
             <div class="section-img-2"></div>
             <div class="section-gallery">
-                <h2 class="section-title">Galeria</h2>
-
+                <h2 class="section-title" id=gallery>Galeria</h2>
+                <div class=gallery-wrapper>
+                    <figure class=gallery-item><a href="img/gallery5.jpg" target="_blank"><img src="img/gallery5.jpg"></a>
+                        <figcaption>Przygotowanie do paintballa</figcaption></figure>
+                    <figure class=gallery-item><a href="img/gallery6.jpg" target="_blank"><img src="img/gallery7.jpg"></a>
+                        <figcaption>Przygotowanie do paintballa</figcaption></figure>
+                    <figure class=gallery-item><a href="img/gallery7.jpg" target="_blank"><img src="img/gallery4.jpg"></a>
+                        <figcaption>Przeprawa przez jezioro</figcaption></figure>
+                    <figure class=gallery-item><a href="img/gallery8.jpg" target="_blank"><img src="img/gallery3.jpg"></a>
+                        <figcaption>Przeprawa przez jezioro</figcaption></figure>
+                    <figure class=gallery-item><a href="img/gallery9.jpg" target="_blank"><img src="img/gallery9.jpg"></a>
+                        <figcaption>Zajęcia terenowe</figcaption></figure>
+                    <figure class=gallery-item><a href="img/gallery10.jpg" target="_blank"><img src="img/gallery10.jpg"></a>
+                        <figcaption>Trening z samoobrony</figcaption></figure>
+                    <figure class=gallery-item><a href="img/gallery11.jpg" target="_blank"><img src="img/gallery11.jpg"></a>
+                        <figcaption>Tworzenie schronienia</figcaption></figure>
+                    <figure class=gallery-item><a href="img/gallery12.jpg" target="_blank"><img src="img/gallery12.jpg"></a>
+                        <figcaption>Zbiórka przed bytowaniem</figcaption></figure>
+                </div>
             </div>
             <div class="section-img-3"></div>
             <div class="section-localization">
-                <h2 class="section-title">Lokalizacja</h2>
+                <h2 class="section-title" id="localization">Lokalizacja</h2>
                 <div class="map-wrapper">
                     <div class="map"><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.771483944373!2d15.246202515807413!3d52.51947447981407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4706fc51f65f5b21%3A0xe4c5a33a08d86851!2sO%C5%9Brodek%20Je%C5%BAdziecki%20Master!5e0!3m2!1spl!2spl!4v1669856952618!5m2!1spl!2spl" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
             </div>
             <div class="section-img-4"></div>
             <div class="section-contact">
-                <h2 class="section-title">Kontakt</h2>
-                <div class="contact"><p>XXXXXXX</p><p>XXXXXX</p><p>XXXXXXX</p></div>
+                <h2 class="section-title" id="contact">Kontakt</h2>
+                <div class="contact"><p class="boss">JANUSZ WALASZEK</p><p><a href="tel:601-848-945">(+48)601-848-945</a></p><p><a href="mailto:master.lubniewice@gmail.com">master.lubniewice@gmail.com</a></p></div>
             </div>
             <div class="footer">
                 <p><a href="">Regulamin obozów</a> | <a href="">Karta uczestnika</a> | <a href="">Prawa autorskie</a></p>
@@ -86,19 +108,19 @@
             </div>
         </main>
         <nav class="navbar hidden-phone hidden-tablet">
-            <img class="menu-logo" src="img/placeholder.png">
+            <img class="menu-logo" src="img/logo.png">
                 <div class="wrapper-menu">
-                    <button class="menu-button-top">Początek</button>
-                    <button class="menu-button">Oferta</button>
-                    <button class="menu-button">Terminy 2023</button>
-                    <button class="menu-button">Zdjęcia</button>
-                    <button class="menu-button">Lokalizacja</button>
-                    <button class="menu-button">Kontakt</button>
+                    <button class="menu-button-top"><a href="#hero-img">Początek</a></button>
+                    <button class="menu-button"><a href="#offer">Oferta</a></button>
+                    <button class="menu-button"><a href="#terms">Terminy 2023</a></button>
+                    <button class="menu-button"><a href="#gallery">Galeria</a></button>
+                    <button class="menu-button"><a href="#localization">Lokalizacja</a></button>
+                    <button class="menu-button"><a href="#contact">Kontakt</a></button>
                 </div>
         </nav>
     </div>
 </body>
 <footer>
 <!--Credits: Pixabay, Lukas, Imprensa AgruBan®, Elle Hughes from: Pexels.com | Font: Black Ops One
-Designed by James Grieshaber, Eben Sorkin-->
+Designed by James Grieshaber, Eben Sorkin | Icons by: Eucalyp, max.icons, Freepik, Good Ware from: Flaticon | dglm-studio from Freepik.com, Lyi Kon from Vecteezy-->
 </footer>
