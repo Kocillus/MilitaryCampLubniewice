@@ -1,4 +1,5 @@
 body {
+    font-family: 'Black Ops One', cursive;
     margin: 0;
     padding: 0;
     min-height: 100%;
@@ -45,6 +46,11 @@ main {
     color: #ffff;
     padding: 10px;
     font-size: 20px;
+}
+
+.hero-text button:hover {
+    color: rgb(71, 99, 73);
+    cursor: pointer;
 }
 
 .section-offer, .section-gallery, .section-localization, .section-contact {
@@ -144,7 +150,7 @@ main {
     margin-top: 0;
     padding-top: 30px;
     color: #ffff;
-    text-decoration: underline rgb(45, 99, 50);
+    text-decoration: underline rgb(71, 99, 73);
 }
 
 .dates-wrapper {
@@ -252,7 +258,14 @@ nav {
     color: #ffff;
     margin: 0;
     padding-bottom: 20px;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Black Ops One', cursive;
+}
+
+.menu-button:hover, .menu-button-top:hover {
+    color: rgb(71, 99, 73);
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 @media (max-width: 768px) { 
@@ -270,4 +283,14 @@ nav {
 .footer p {
     text-align: center;
     color: darkgrey;
+}
+
+.footer a, .footer a:visited {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgb(71, 99, 73);
+    text-decoration: none;
 }
