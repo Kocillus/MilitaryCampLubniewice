@@ -1,13 +1,15 @@
 body {
     margin: 0;
-    padding-top: 0;
+    padding: 0;
     min-height: 100%;
     width: 100%;
+    overflow-x:hidden;
+    overflow-y:hidden;
 }
 
 main {
     background-color: #ffff;
-    height: 100vh;
+    height: calc(100vh + 5px);
     width: 100%;
     margin: 0;
     overflow-y: auto;
@@ -45,7 +47,7 @@ main {
     font-size: 20px;
 }
 
-.section-offer {
+.section-offer, .section-gallery, .section-localization, .section-contact {
     background-color: rgba(0, 0, 0, 0.9);
     padding-bottom: 40px;
     color: #ffff;
@@ -64,28 +66,27 @@ main {
         "icon3 description3"; 
 }
 
-
-.icon1 { 
+.icon1 {
     grid-area: icon1; 
-    justify-self: end;
-    padding-right: 30px;
 }
 
-.icon2 { 
+.icon2 {
     grid-area: icon2; 
-    justify-self: end;
-    padding-right: 30px;
 }
 
-.icon3 { 
+.icon3 {
     grid-area: icon3; 
+}
+
+.icon1, .icon2, .icon3 { 
     justify-self: end;
+    align-self: center;
     padding-right: 30px;
 }
 
 .icon1 img, .icon2 img, .icon3 img{
-    width: 200px;
-    height: 200px;
+    width: 10vw;
+    height: 10vw;
 }
 
 .description1 { 
@@ -104,18 +105,26 @@ main {
 }
 
 .description1 p, .description2 p, .description3 p {
-    width: 400px;
+    width: 25vw;
 }
 
 .section-img-1 {
-    background-image: url(img/section-space-2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/section-space-1.jpg);
 }
 
 .section-img-2 {
-    background-image: url(img/section-space-1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/section-space-2.jpg);
 }
 
-.section-img-1, .section-img-2 {
+.section-img-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/section-space-3.jpg);
+}
+
+.section-img-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/section-space-4.jpg);
+}
+
+.section-img-1, .section-img-2, .section-img-3, .section-img-4 {
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
@@ -131,10 +140,11 @@ main {
 
 .section-title {
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 0;
     padding-top: 30px;
     color: #ffff;
+    text-decoration: underline rgb(45, 99, 50);
 }
 
 .dates-wrapper {
@@ -146,12 +156,13 @@ main {
 .dates-card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.03);
     transition: 0.3s;
-    margin: 2vh;
-    padding-top: 2vh;
+    margin: 2vw;
+    padding-top: 2vw;
     background-color: rgba(57, 74, 58, 1);
     background-image: linear-gradient(rgba(57, 74, 58, 1), rgba(255, 255, 255, 0.2));
     border: solid rgba(60, 74, 58, 1);
     height: auto;
+    width: auto;
   }
   
 .dates-card:hover {
@@ -177,12 +188,34 @@ main {
     padding: 0;
 }
 
+.map-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-adress p, .contact p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.contact {
+    padding-left: 20%;
+}
+
+.map {
+    width: 80vw;
+}
 
 nav {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(img/background.jpg);
     border-right: solid 2px rgba(0, 0, 0, 0.68);
     color: #ffff;
-    padding: 5px;
+    padding: 5px 5px 0 5px;
     height: 100vh;
     width: auto;
 }
@@ -220,4 +253,21 @@ nav {
     margin: 0;
     padding-bottom: 20px;
     font-size: 20px;
+}
+
+@media (max-width: 768px) { 
+    .navbar{
+        display:none;
+    }
+}
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer p {
+    text-align: center;
+    color: darkgrey;
 }
