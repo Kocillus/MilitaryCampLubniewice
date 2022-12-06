@@ -103,8 +103,9 @@ main {
 
 .icon1, .icon2, .icon3, .icon4, .icon5 { 
     justify-self: end;
-    align-self: center;
+    align-self:center;
     padding-right: 30px;
+    padding-bottom: 30px;
     margin-top: 50px;
 }
 
@@ -314,8 +315,8 @@ main {
 /*SIDE NAVBAR*/
 
 nav {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(img/background.jpg);
-    border-right: solid 2px rgba(0, 0, 0, 0.68);
+    background-color: rgba(0, 0, 0, 0.9);
+    border-right: solid 2px rgb(71, 99, 73);
     color: #ffff;
     padding: 5px 5px 0 5px;
     height: 100vh;
@@ -337,7 +338,7 @@ nav {
 
 .menu-logo {
     width: 250px;
-    padding-top: 10px;
+    padding: 15px 10px 15px 10px;
 }
 
 .menu {
@@ -373,12 +374,6 @@ nav {
     cursor: pointer;
 }
 
-@media (max-width: 768px) { 
-    .navbar{
-        display:none;
-    }
-}
-
 .footer {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -398,4 +393,55 @@ nav {
 .footer a:hover {
     color: rgb(71, 99, 73);
     text-decoration: none;
+}
+
+@media (max-width: 768px) { 
+    .navbar{
+        display:none;
+    }
+}
+
+@media (max-width: 425px) { 
+    .navbar{
+        display:none;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .grid-container {
+        font-size: 10px;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .grid-container p {
+        width: 45vw;
+    }
+
+    .grid-container img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .dates-card h3{
+        font-size: 20px;
+    }
+
+    .dates-container li {
+        font-size: 15px;
+    }
+
+    .gallery-item figcaption {
+        font-size: 10px;
+    }
+
+    .section-contact p {
+        font-size: 15px;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
 }
