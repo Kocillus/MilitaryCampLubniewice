@@ -70,15 +70,15 @@ main {
     padding-left: 10vh;
     padding-right: 10vh;
     display: grid; 
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
-        "icon1 description1"
-        "icon2 description2"
-        "icon3 description3"
-        "icon4 description4"
-        "icon5 description5"; 
+        "icon1 description1 description1"
+        "icon2 description2 description2"
+        "icon3 description3 description3"
+        "icon4 description4 description4"
+        "icon5 description5 description5"; 
 }
 
 .icon1 {
@@ -140,7 +140,7 @@ main {
 }
 
 .description1 p, .description2 p, .description3 p, .description4 p, .description5 p {
-    width: 25vw;
+    width: 30vw;
 }
 
 .section-img-1 {
@@ -295,7 +295,7 @@ main {
     padding-left: 20%;
 }
 
-.contact p {
+.contact-item p {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 15px;
@@ -303,9 +303,24 @@ main {
     margin: 0;
 }
 
-.contact a {
+.contact-item a {
     color: #ffff;
+    font-size: 22px;
     text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-item img {
+    width: 15vw;
+    padding: 2vw;
+
 }
 
 .map {
