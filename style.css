@@ -456,6 +456,10 @@ nav {
         font-size: 15px;
     }
 
+    .section-contact a {
+        font-size: 12px;
+    }
+
     .footer p {
         font-size: 10px;
     }
