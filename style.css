@@ -58,7 +58,7 @@ main {
     transform: scale(1.1);
 }
 
-.section-offer, .section-gallery, .section-localization, .section-contact {
+.section-offer, .section-gallery, .section-localization, .section-contact, .section-faq {
     background-color: rgba(0, 0, 0, 0.9);
     padding-bottom: 5vw;
     color: #ffff;
@@ -159,7 +159,11 @@ main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/section-space-4.jpg);
 }
 
-.section-img-1, .section-img-2, .section-img-3, .section-img-4 {
+.section-img-5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/section-space-5.jpg);
+}
+
+.section-img-1, .section-img-2, .section-img-3, .section-img-4, .section-img-5 {
     height: 15vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -238,6 +242,7 @@ main {
     margin: 0;
     flex: 0 0 25%;
     max-width: 25%;
+    height: 25vw;
     text-align: center;
     
   }
@@ -278,9 +283,35 @@ main {
     background-color: rgba(0, 0, 0, 0.6);
   }
 
+video {
+    width: 35vw;
+    height: auto;
+  }
+
+.videos {
+    padding-top: 3vw;
+}
+
 .gallery-item:hover:before, .gallery-item:hover figcaption {
     display: none;
   }
+
+/* FAQ SECTION */
+details {
+    font-size: 20px;
+    cursor: pointer;
+}
+details p {
+    padding: 0 12vw 2vw 12vw;
+    margin: 0;
+}
+
+summary {
+    margin: 0 5vw 0 5vw;
+    padding-bottom: 1vw;
+    color: rgb(71, 99, 73);
+    font-size: 30px;
+}
 
 /*MAP SECTION*/
 .map-wrapper {
@@ -315,11 +346,14 @@ main {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.05);;
+
 }
 
 .contact-item img {
     width: 15vw;
     padding: 2vw;
+
 
 }
 
@@ -414,6 +448,11 @@ nav {
     .navbar{
         display:none;
     }
+
+    video {
+        padding-top: 3vw;
+        width: 45vw;
+    }
 }
 
 @media (max-width: 425px) { 
@@ -461,6 +500,14 @@ nav {
     }
 
     .footer p {
+        font-size: 10px;
+    }
+
+    summary {
+        font-size: 15px;
+    }
+
+    details p {
         font-size: 10px;
     }
 }
